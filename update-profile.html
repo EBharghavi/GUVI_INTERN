@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Update Profile</h2>
+        <form id="update-profile-form" method="POST" action="../php/update-profile.php">
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username" name="username" required>
+            <label for="new-age">Age:</label>
+            <input type="number" id="new-age" name="age" required>
+            <label for="new-dob">Date of Birth:</label>
+            <input type="date" id="new-dob" name="dob" required>
+            <label for="new-contact">Contact:</label>
+            <input type="text" id="new-contact" name="contact" required>
+            <button type="submit">Update</button>
+        </form>
+        <a href="profile.html"><button>Back to Profile</button></a>
+    </div>
+    <script src="../js/update-profile.js"></script>
+</body>
+</html>
